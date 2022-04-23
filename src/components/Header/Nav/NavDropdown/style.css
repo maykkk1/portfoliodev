@@ -1,0 +1,45 @@
+.NavDropdown span{
+    font-size: .6rem;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--neutral-color);
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+
+.NavDropdown span p {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.NavDropdown_items {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: var(--primary-color);
+    width: 180px;
+    overflow: hidden;
+    transition: 400ms;
+}
+
+
+
+.NavDropdown_items li {
+    border-bottom: 1.5px solid rgba(82, 78, 78, 0.308);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.NavDropdown_items a {
+    color: var(--neutral-color);
+    text-decoration: none;
+    font-size: 2rem;
+}

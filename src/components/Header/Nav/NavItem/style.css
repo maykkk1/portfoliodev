@@ -1,0 +1,7 @@
+.NavItem a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--neutral-color);
+    text-transform: capitalize;
+    font-weight: lighter;
+}

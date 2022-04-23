@@ -1,0 +1,19 @@
+.NavContent {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.NavContent img {
+    width: 180px;
+    margin: auto 0;
+}
+
+.NavContent__Items {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    margin: auto 0 10px 0;
+}
+
