@@ -1,17 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 :root {
   --bg-color: #282a36;
   --bg-color2: #44475a;
   --neutral-color: #f8f8f2;
   --primary-color: #ff5555;
-  --secuntary-color: #50fa7b;
+  --secundary-color: #50fa7b;
+  --text-color: #bd93f9;
+  --text-color2: #ffb86c;
+  --text-color3: #f1fa8c;
+  --text-color4: #ff79c6;
 }
 
 body {

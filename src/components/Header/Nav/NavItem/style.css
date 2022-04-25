@@ -1,7 +1,12 @@
 .NavItem a{
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--neutral-color);
     text-transform: capitalize;
     font-weight: lighter;
+    transition: 400ms;
+}
+
+.NavItem a:hover {
+    color: var(--primary-color);
 }

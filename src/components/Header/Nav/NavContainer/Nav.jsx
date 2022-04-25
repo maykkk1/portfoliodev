@@ -1,7 +1,7 @@
 import NavContent from "../NavContent/NavContent";
 import "./style.css"
 
-const Nav = () => {
+const Nav = () => {   
     return ( 
         <nav>
             <NavContent/>

@@ -6,18 +6,18 @@ import { useState } from "react";
 
 const NavDropdown = () => {
     const [isDropdownVisivle, SetIsDropdownVisible] = useState(false)
-    const [dropdownStyle, SetDropdownStyle] = useState({height:"0px", bottom: "-3px"})
+    const [dropdownStyle, SetDropdownStyle] = useState({height:"0px", bottom: "-1px"})
     const [dropdownIconRotate, SetDropdownIconRotate] = useState(0)
 
     const handleDropdown = () => {
         if (isDropdownVisivle) {
             SetIsDropdownVisible(false)
             SetDropdownIconRotate(0)
-            return SetDropdownStyle({height:"0px", bottom: "-3px"})
+            return SetDropdownStyle({height:"0px", bottom: "-1px"})
         }
         SetIsDropdownVisible(true)
         SetDropdownIconRotate(90)
-        return SetDropdownStyle({height:"100px", bottom: "-103px"})
+        return SetDropdownStyle({height:"100px", bottom: "-101px"})
 
     }
 

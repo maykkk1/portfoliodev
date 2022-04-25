@@ -1,5 +1,13 @@
-header {
+.Header {
     width: 100vw;
-    height: 90vh;
-    background-color: var(--bg-color2);
+    height: 100vh;
+    background-image: url("../../../assets//logo/portfolio-header-banner.png");
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-position: right;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
+
