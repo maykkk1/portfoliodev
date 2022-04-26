@@ -1,12 +1,25 @@
-.NavItem a{
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: var(--neutral-color);
-    text-transform: capitalize;
-    font-weight: lighter;
+.NavItem{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: 400ms;
+    cursor: pointer;
 }
 
-.NavItem a:hover {
-    color: var(--primary-color);
+.NavItem:hover {
+    background-color: var(--primary-color);
+}
+
+.NavItem__hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 50px;
+    position: absolute;
+    background-color: var(--neutral-color);
+    left: -230px;
+    border-radius: 50px;
 }

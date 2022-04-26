@@ -1,13 +1,14 @@
 .Header {
     width: 100vw;
     height: 100vh;
+    min-height: 100vh;
     background-image: url("../../../assets//logo/portfolio-header-banner.png");
     background-repeat: no-repeat;
-    background-position-y: 0;
-    background-position: right;
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
+    overflow: hidden;
+    padding-top: 30px;
 }
 

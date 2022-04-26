@@ -1,0 +1,13 @@
+.TypeWritterWord {
+    display: flex;
+    color: var(--primary-color);
+    transition: 600ms;
+    text-shadow: 1px 1px 2px var(--neutral-color);
+}
+
+.TypeWritterWord__initial {
+    color: var(--neutral-color);
+    transition: 600ms;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px var(--primary-color);
+}

@@ -1,0 +1,30 @@
+.Nav {
+    position: fixed;
+    width: 70px;
+    height: 100vh;
+    background-color: var(--neutral-color);
+    top: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    transition: 400ms;
+}
+
+.Nav__items {
+    font-size: 2rem;
+    width: 100%;
+}
+
+
+.Nav__socialLinks, .Nav__items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.Nav__socialLinks img{
+    width: 50px;
+}
