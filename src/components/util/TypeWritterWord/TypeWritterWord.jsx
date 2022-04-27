@@ -12,15 +12,19 @@ const TypeWritterWord = (props) => {
         setTimeout(() => {
             SetText(<TypeWritter text={props.firstText} time={140} />);
         }, 2000);
-        setTimeout(() => {
-            if (props.rotate) {
-                SetInitialLetterRotate({transform: "rotate(180deg)"})
-            }
-            SetText(<p></p>);
-          }, 4000);
+        setTimeout(()=>{SetText(props.firstText.slice(0, -1))}, 4100)
+        setTimeout(()=>{SetText(props.firstText.slice(0, -2))}, 4200)
+        setTimeout(()=>{SetText(props.firstText.slice(0, -3))}, 4300)
+        setTimeout(()=>{SetText(props.firstText.slice(0, -4))}, 4400)
+        setTimeout(()=>{SetText(props.firstText.slice(0, -5))}, 4500)
+        setTimeout(()=>{SetText(props.firstText.slice(0, -6))}, 4600)
+        if(props.rotate) {
+            setTimeout(()=>{SetInitialLetterRotate({transform: "rotate(180deg)"})}, 4900)
+        }
+
         setTimeout(() => {
             SetText(<TypeWritter text={props.secondText} time={140} />);
-          }, 5000);
+          }, 5500);
       }, []);
 
     useEffect(()=>{

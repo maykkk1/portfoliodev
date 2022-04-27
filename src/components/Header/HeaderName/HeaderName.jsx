@@ -15,13 +15,13 @@ function HeaderName() {
   useEffect(()=>{
     setTimeout(() => {
       SetNamePosition({opacity: "0"})
-    }, 7000);
+    }, 7500);
   }, [])
 
   useEffect(()=>{
     setTimeout(() => {
       SetTitleOpacity({opacity: "1"})
-    }, 7600);
+    }, 8000);
   }, [])
   return (
     <>
