@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Typewriter } from "react-simple-typewriter";
 import HeaderName from "../HeaderName/HeaderName";
 import "./style.css"
 
