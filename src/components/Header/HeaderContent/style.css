@@ -70,6 +70,7 @@
 
 .HeaderContent__Apresentation img {
     margin-top: 10px;
+    margin-bottom: 30px;
     transition: 600ms ease-in-out;
 }
 
@@ -80,18 +81,30 @@
     font-size: 1.5rem;
     color: var(--bg-color);
     cursor: pointer;
-    margin-top: 30px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .HeaderContent {
-        width: 90%;
+        width: 95%;
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 950px) {
     .HeaderContent {
-        padding-top: 100px;
         width: 100%;
+        padding-top: 50px;
+    }
+    .button-53 {
+        width: 80%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 650px) {
+    .HeaderContent {
+        padding-top: 150px;
     }
 }

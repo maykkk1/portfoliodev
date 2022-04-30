@@ -11,9 +11,11 @@
     align-items: center;
     padding: 30px 0;
     transition: 400ms;
+    right: "0"
 }
 
 .Nav__items {
+    padding-top: 25px;
     font-size: 2rem;
     width: 100%;
 }
@@ -27,4 +29,21 @@
 
 .Nav__socialLinks img{
     width: 50px;
+}
+
+.menu {
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    font-size: 3rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    display: none;
+}
+
+
+@media (max-width: 950px) {
+    .menu {
+        display: block;
+    }
 }

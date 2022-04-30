@@ -10,12 +10,12 @@ const HeaderContent = () => {
 
     useEffect(()=>{
         setTimeout(()=>{SetBtnPostion({transform: "translateY(0)", opacity: "1"})}, 2000)
-    })
+    }, [])
     
     
     useEffect(()=>{
         setTimeout(()=>{SetLogoSize({width: "90%", opacity:"1"})}, 800)
-    })
+    }, [])
 
     return ( 
         <div className="HeaderContent">

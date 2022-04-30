@@ -28,8 +28,10 @@ const TypeWritterWord = (props) => {
       }, []);
 
     useEffect(()=>{
-        setTimeout(()=>{SetTextSize({fontSize: "6rem"})}, 500)
-    })
+        window.innerWidth > 930
+        ? setTimeout(()=>{SetTextSize({fontSize: "6rem"})}, 500)
+        : setTimeout(()=>{SetTextSize({fontSize: "2.5rem"})}, 500)
+    }, [])
 
     return ( 
         <div className="TypeWritterWord" style={textSize}>
