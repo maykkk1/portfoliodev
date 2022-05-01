@@ -1,7 +1,14 @@
 .Sobre {
-    width: 80%;
-    height: 100vh;
+    width: 100%;
+    height: 105vh;
     display: flex;
     align-items: flex-end;
     overflow: hidden;
+    position: relative;
 } 
+
+.Sobre__wave-bg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,7 +1,7 @@
 main {
     width: 100%;
     height: max-content;
-    background-color: var(--bg-color);
+    background-color: #070100;
     display: flex;
     flex-direction: column;
     align-items: center;

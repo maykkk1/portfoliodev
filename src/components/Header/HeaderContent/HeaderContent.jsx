@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Typewriter } from "react-simple-typewriter";
 import HeaderName from "../HeaderName/HeaderName";
 import "./style.css"
 
@@ -23,7 +22,7 @@ const HeaderContent = () => {
             <div className="HeaderContent__Apresentation">
             <img style={logoSize} src={require("../../../assets/logo/Logo-Md-Web-Developer.webp")} alt="" />
                 <HeaderName />
-                <button class="button-53" role="button" style={btnPosition}>Entre em contato</button>
+                <button className="button-53" style={btnPosition}>Entre em contato</button>
             </div>
         </div>
      );
