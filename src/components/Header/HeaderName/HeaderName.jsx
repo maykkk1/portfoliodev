@@ -1,7 +1,6 @@
 import "./style.css";
 import { useState, useEffect} from "react";
 import TypeWritterWord from "../../util/TypeWritterWord/TypeWritterWord";
-import { Typewriter } from "react-simple-typewriter";
 
 function HeaderName() {
   const [namePosition, SetNamePosition] = useState({transform: "translateY(-50px)"})

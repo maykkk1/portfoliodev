@@ -11,9 +11,9 @@
 
 .pageTitle {
     font-size: 5.5rem;
-    color: var(--primary-color);
+    color: var(--bg-color);
     transition: 600ms;
-    text-shadow: 1px 1px 2px var(--neutral-color);
+    text-shadow: 1px 1px 2px var(--primary-color);
     position: relative;
     bottom: 12%;
     font-weight: 500;

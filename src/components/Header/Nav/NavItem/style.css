@@ -9,7 +9,7 @@
 }
 
 .NavItem:hover {
-    background-color: var(--primary-color);
+    background-color: var(--secundary-color);
 }
 
 .NavItem__hover {
@@ -19,7 +19,11 @@
     width: 220px;
     height: 50px;
     position: absolute;
-    background-color: var(--neutral-color);
+    background-color: var(--secundary-color);
     left: -230px;
     border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: var(--bg-color1);
+    box-shadow: 1px 1px 3px var(--bg-color2);
 }
