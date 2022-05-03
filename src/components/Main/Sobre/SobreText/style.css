@@ -8,8 +8,8 @@
 
 .SobreText h2 {
     font-size: 2rem;
-    color: var(--secundary-color);
-    text-shadow: .5px .5px 1px var(--neutral-color);
+    color: var(--primary-color);
+    text-shadow: .5px .5px 1px black;
     margin-bottom: 10px;
 }
 
@@ -25,6 +25,13 @@
     color: var(--bg-color2);
     font-size: 1.3rem;
     margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.SobreText__cvBtn:hover {
+    background-color: #3ba756;
 }
 
 @media (max-width: 1200px) {
