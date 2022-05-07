@@ -12,8 +12,8 @@
 }
 
 .Habilidades__IconWrapper {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     overflow: hidden;
     background-color: black;
     border-radius: 100%;
@@ -25,16 +25,19 @@
 }
 
 .Habilidades__IconWrapper img {
-    width: 85%;
-    height: 85%;
+    width: 75%;
+    height: 75%;
     object-fit: cover;
     object-position: bottom;
 }
 
 
 @media (max-width: 950px) {
+    .Habilidades {
+        padding: 40px 40px;
+    }
     .Habilidades__IconWrapper{
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 70px;
     }
 }

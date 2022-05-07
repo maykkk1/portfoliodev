@@ -12,7 +12,9 @@ const NavItem = (props) => {
     }
     return ( 
         <li className="NavItem" onMouseEnter={handleNavHover} onMouseLeave={handleNavHover}>
+            <a href={`#${props.name}`}>
             <FontAwesomeIcon icon={props.icon} />
+            </a>
             {isNavHoverVisible ? <span className="NavItem__hover">{props.name}</span> : null}
         </li>
      );

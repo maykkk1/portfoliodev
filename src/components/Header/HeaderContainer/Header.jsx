@@ -9,7 +9,7 @@ const Header = () => {
 
 
   return (
-    <header className='Header'>
+    <header className='Header' id='Home'>
         <Nav/>
         <HeaderContent/>
     </header>
