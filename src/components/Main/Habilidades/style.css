@@ -34,7 +34,7 @@
 
 @media (max-width: 950px) {
     .Habilidades {
-        padding: 40px 40px;
+        padding: 40px 10px;
     }
     .Habilidades__IconWrapper{
         width: 70px;

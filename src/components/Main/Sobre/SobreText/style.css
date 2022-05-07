@@ -53,3 +53,13 @@
         font-size: 1rem;
     }
 }
+
+@media (max-width: 375px) {
+    .SobreText h2 {
+        font-size: 1rem;
+    }
+
+    .SobreText p {
+        font-size: .9rem;
+    }
+}
