@@ -1,0 +1,95 @@
+.ProjetosContent {
+    width: 80%;
+    height: max-content;
+    background-color: var(--neutral-color);
+}
+
+.top {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+.top h2 {
+    color: var(--neutral-color);
+    font-size: 1.2rem;
+}
+
+.balls {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.ball {
+    color: var(--secundary-color);
+    font-size: 1.5rem;
+}
+
+
+.projetosIcon {
+    color: var(--secundary-color);
+    font-size: 2rem;
+}
+
+.projetosIconWrapper {
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.topDropdown {
+    height: 45px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown {
+    color: white;
+    width: 200px;
+    height: 40px;
+    border: 1px solid var(--secundary-color);
+    background-color: var(--bg-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: 600ms;
+}
+
+.ProjetosContent__categorias {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    overflow: hidden;
+    height: 0;
+    transition: 150ms;
+}
+
+.ProjetosContent__categoriasItem {
+    border: 1px solid var(--secundary-color);
+    background-color: var(--bg-color);
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.ProjetosContent__categoriasItem:hover {
+    background-color: var(--bg-color2);
+}

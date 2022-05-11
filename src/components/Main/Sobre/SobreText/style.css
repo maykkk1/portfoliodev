@@ -8,7 +8,7 @@
 
 .SobreText h2 {
     font-size: 2rem;
-    color: var(--primary-color);
+    color: var(--secundary-color);
     text-shadow: .5px .5px 1px black;
     margin-bottom: 10px;
 }

@@ -15,13 +15,13 @@
     width: 120px;
     height: 120px;
     overflow: hidden;
-    background-color: black;
+    background-color: var(--bg-color);
     border-radius: 100%;
     box-shadow: 1px 1px 2px black;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 5px solid var(--neutral-color);
+    border: 5px solid var(--bg-color2);
 }
 
 .Habilidades__IconWrapper img {

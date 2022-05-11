@@ -1,0 +1,8 @@
+.Projetos {
+    background-color: var(--bg-color);
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

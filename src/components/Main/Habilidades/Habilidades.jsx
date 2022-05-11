@@ -4,7 +4,7 @@ import "./style.css"
 
 const Habilidades = () => {
     return ( 
-        <section className='Habilidades'>
+        <section className='Habilidades' id='Habilidades'>
             <HabilidadesWrapper imgPath={"javascript_logo.png"}/>
             <HabilidadesWrapper imgPath={"css_logo.png"}/>
             <HabilidadesWrapper imgPath={"html_logo.png"}/>
