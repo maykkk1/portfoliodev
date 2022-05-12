@@ -1,0 +1,13 @@
+.ProjetosWrapper {
+    width: 100%;
+    min-height: 100px;
+    height: max-content;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-items: center;
+    gap: 35px;
+
+
+}

@@ -3,16 +3,17 @@ import "./style.css"
 import { faCircle, faRectangleList, faAngleDown} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from 'react';
+import ProjetosWrapper from './ProjetosWrapper/ProjetosWrapper';
 
 const ProjetosContent = () => {
     const [selectedItem, SetSelectedItem] = useState("Principais")
     const [isDropdownVisible, SetDropdownVisible] = useState(true)
-    const [dropdownHeigth, setDropdownHeight] = useState({height:"0", bottom:"0"})
+    const [dropdownHeigth, setDropdownHeight] = useState({height:"0", display:"none"})
 
     const handleDropdown = () => {
         if(isDropdownVisible) {
             SetDropdownVisible(false)
-            setDropdownHeight({height:"0", bottom:"0"})
+            setDropdownHeight({height:"0", bottom:"0", display:"none"})
         } else {
             SetDropdownVisible(true)
             setDropdownHeight({height:"120px", bottom:"-120px"})
@@ -43,6 +44,7 @@ const ProjetosContent = () => {
                     </div>
                 </div>
             </div>
+            <ProjetosWrapper/>
         </div>
      );
 }
