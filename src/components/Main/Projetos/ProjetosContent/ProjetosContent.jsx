@@ -4,8 +4,18 @@ import { faCircle, faRectangleList, faAngleDown} from "@fortawesome/free-solid-s
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from 'react';
 import ProjetosWrapper from './ProjetosWrapper/ProjetosWrapper';
+import { projetos } from '../../../../services/projetos';
 
 const ProjetosContent = () => {
+    const projetosReact = projetos.filter((projeto)=>{
+        return projeto.tecnologias.includes("React")
+    })
+
+    const projetosPrincipais = projetos.filter((projeto)=>{
+        return projeto.ehPrincipal
+    })
+
+    const [selectedProjects, SetSelectedProjects] = useState(projetosPrincipais)
     const [selectedItem, SetSelectedItem] = useState("Principais")
     const [isDropdownVisible, SetDropdownVisible] = useState(true)
     const [dropdownHeigth, setDropdownHeight] = useState({height:"0", display:"none"})
@@ -18,6 +28,10 @@ const ProjetosContent = () => {
             SetDropdownVisible(true)
             setDropdownHeight({height:"120px", bottom:"-120px"})
         }
+    }
+
+    const handleSelectedItem = (item) => {
+        SetSelectedItem(item)
     }
 
     return ( 
@@ -38,13 +52,22 @@ const ProjetosContent = () => {
                     {selectedItem}
                     <FontAwesomeIcon icon={faAngleDown}/>
                     <div className='ProjetosContent__categorias' style={dropdownHeigth}>
-                        <span className='ProjetosContent__categoriasItem'>Todos</span>
-                        <span className='ProjetosContent__categoriasItem'>Principais</span>
-                        <span className='ProjetosContent__categoriasItem'>React</span>
+                        <span className='ProjetosContent__categoriasItem' onClick={()=>{
+                            handleSelectedItem("Principais")
+                            SetSelectedProjects(projetosPrincipais)
+                        }}>Pricipais</span>
+                        <span className='ProjetosContent__categoriasItem' onClick={()=>{
+                            handleSelectedItem("Todos")
+                            SetSelectedProjects(projetos)
+                        }}>Todos</span>
+                        <span className='ProjetosContent__categoriasItem' onClick={()=>{
+                            handleSelectedItem("React")
+                            SetSelectedProjects(projetosReact)
+                        }}>React</span>
                     </div>
                 </div>
             </div>
-            <ProjetosWrapper/>
+            <ProjetosWrapper projetos={selectedProjects}/>
         </div>
      );
 }

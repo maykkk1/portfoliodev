@@ -6,6 +6,10 @@
     text-align: center;
 }
 
+.SobreText a {
+    text-decoration: none;
+}
+
 .SobreText h2 {
     font-size: 2rem;
     color: var(--secundary-color);
@@ -19,8 +23,13 @@
 }
 
 .SobreText__cvBtn {
-    width: 50%;
-    height: 60px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 5px;
     background-color: var(--secundary-color);
     color: var(--bg-color2);
     font-size: 1.3rem;

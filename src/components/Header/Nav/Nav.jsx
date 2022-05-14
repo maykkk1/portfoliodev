@@ -1,5 +1,6 @@
 import React from 'react';
 import NavItem from './NavItem/NavItem';
+import { faGithub, faLinkedin, faWhatsapp} from "@fortawesome/free-brands-svg-icons"
 import { faHouse, faUser, faBarsProgress, faRectangleList, faEnvelope, faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./style.css"
@@ -49,9 +50,9 @@ const Nav = () => {
                 <NavItem icon={faEnvelope} name={"Contato"}/>
             </ul>
             <ul className='Nav__socialLinks'>
-                <li><img src={require("./../../../assets/icons/linkedin.png")} alt="" /></li>
-                <li><img src={require("./../../../assets/icons/github.png")} alt="" /></li>
-                <li><img src={require("./../../../assets/icons/whatsapp.png")} alt="" /></li>
+                <li><a target="_blank" href="https://github.com/maykkk1"><FontAwesomeIcon icon={faGithub} className='Nav__socialLinks__item'/></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/maycondouglasdev/"><FontAwesomeIcon icon={faLinkedin} className='Nav__socialLinks__item'/></a></li>
+                <li><a target="_blank" href="https://api.whatsapp.com/send?phone=5561994442277"><FontAwesomeIcon icon={faWhatsapp} className='Nav__socialLinks__item'/></a></li>
             </ul>
         </nav>
      );

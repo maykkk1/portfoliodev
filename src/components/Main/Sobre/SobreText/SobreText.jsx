@@ -1,5 +1,7 @@
 import React from "react";
 import "./style.css"
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const SobreText = () => {
   return (
@@ -13,7 +15,12 @@ const SobreText = () => {
         centuries, but also the leap into electronic typesetting, remaining
         essentially unchanged.
       </p>
-      <button className="SobreText__cvBtn">Download CV</button>
+      <a href="https://drive.google.com/uc?export=download&id=1WJFBUSSvLqMakcQVxkiUNCPdmY3G-_mI">
+        <button className="SobreText__cvBtn"> 
+          Currículo
+          <FontAwesomeIcon icon={faDownload}  />
+        </button>
+      </a>
     </div>
   );
 };
