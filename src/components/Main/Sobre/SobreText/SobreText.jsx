@@ -1,24 +1,25 @@
 import React from "react";
-import "./style.css"
+import "./style.css";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const SobreText = () => {
   return (
     <div className="SobreText">
-      <h2>Ola, me chamo Maycon Douglas</h2>
+      <h2>Olá, me chamo Maycon Douglas</h2>
       <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged.
+        Sou um Desenvolvedor Web. Apaixonado por desafios e a transformar
+        ideias em código. Entre minhas principais habilidades estão JavaScript,
+        CSS, HMTL, React, Java, Python e SQL. Sou proativo, costumo lidar bem com 
+        trabalho em equipe, possuo facilidade em me adaptar à novos cenários e me orgulho
+        em dizer que minha maior qualidade é a perseverança, sempre vou até o fim no que julgo
+        importante. Independente dos desafios.
+
       </p>
       <a href="https://drive.google.com/uc?export=download&id=1WJFBUSSvLqMakcQVxkiUNCPdmY3G-_mI">
-        <button className="SobreText__cvBtn"> 
+        <button className="SobreText__cvBtn">
           Currículo
-          <FontAwesomeIcon icon={faDownload}  />
+          <FontAwesomeIcon icon={faDownload} />
         </button>
       </a>
     </div>

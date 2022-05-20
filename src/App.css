@@ -21,8 +21,16 @@
 
 html {
   scroll-behavior: smooth;
+  max-width: 1440px;
 }
 
 body {
   overflow-x: hidden;
+  width: 100vw;
+  background: #000 url("./assets/logo/portfolio-bg.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: 100%;
+  background-size: cover;
 }

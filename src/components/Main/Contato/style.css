@@ -1,0 +1,77 @@
+.Contato {
+    width: 100%;
+    height: max-content;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contato form {
+    width: 90%;
+    max-width: 450px;
+    min-width: 330px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.699);
+    gap: 15px;
+    padding: 40px 20px 15px 20px;
+    border-radius: 5px;
+}
+
+.Contato form h3 {
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px var(--bg-color) inset !important;
+}
+input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+}
+
+.Contato form input {
+    width: 100%;
+    height: 40px;
+    background-color: var(--bg-color);
+    border: none;
+    padding: 0 10px;
+    color: white;
+    outline: none;
+}
+
+.Contato form textarea {
+    resize: none;
+    width: 100%;
+    background-color: var(--bg-color);
+    border: none;
+    padding: 10px 10px;
+    color: white;
+    outline: none;
+}
+
+
+.Contato form button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: var(--secundary-color);
+    font-size: 1.2rem;
+    color: var(--bg-color);
+    font-weight: bolder;
+    transition: 400ms;
+    cursor: pointer;
+}
+
+.Contato form button:hover {
+    background-color: #3ba756;
+}

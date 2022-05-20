@@ -26,8 +26,8 @@ const ProjetosCard = (props) => {
             <img onMouseEnter={handleInsideContent} onMouseLeave={handleInsideContent} src={require(`../../../../../../assets/images/projetos/${props.path}`)} alt="" />
             <h3 className='ProjetosCard__title' style={insideContent}>{props.name}</h3>
             <div className='ProjetosCard__tecnologias' style={insideContent}>
-                {props.tech.map((tech)=>{
-                    return <ProjetosTech name={tech}/>
+                {props.tech.map((tech, index)=>{
+                    return <ProjetosTech name={tech} key={index}/>
                 })}
             </div>
             <div className='ProjetosCard__navLinks'>

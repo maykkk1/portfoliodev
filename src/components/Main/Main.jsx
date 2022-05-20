@@ -1,4 +1,5 @@
 import React from 'react';
+import Contato from './Contato/Contato';
 import Habilidades from './Habilidades/Habilidades';
 import Projetos from './Projetos/Projetos';
 import Sobre from './Sobre/Sobre';
@@ -11,6 +12,7 @@ const Main = () => {
             <Sobre/>
             <Habilidades/>
             <Projetos/>
+            <Contato />
         </main>
      );
 }

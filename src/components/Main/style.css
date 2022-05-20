@@ -1,7 +1,7 @@
 main {
-    width: 100%;
+    width: 100vw;
     height: max-content;
-    background-color: #070100;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,8 +1,9 @@
 .ProjetosContent {
+    max-width: 1000px;
     width: 85%;
     min-height: 600px;
     height: max-content;
-    background-color: rgb(29, 28, 28);
+    background-color: rgb(24, 23, 23);
     margin-bottom: 50px;
 }
 
@@ -27,13 +28,13 @@
 }
 
 .ball {
-    color: var(--secundary-color);
+    color: var(--bg-color2);
     font-size: 1.5rem;
 }
 
 
 .projetosIcon {
-    color: var(--secundary-color);
+    color: var(--bg-color2);
     font-size: 2rem;
 }
 
@@ -49,14 +50,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid var(--secundary-color);
+    border-bottom: 1px solid var(--bg-color2);
 }
 
 .dropdown {
     color: white;
     width: 200px;
     height: 40px;
-    border: 1px solid var(--secundary-color);
+    border: 1px solid var(--bg-color2);
     border-bottom: none;
     background-color: var(--bg-color);
     color: white;
@@ -81,7 +82,7 @@
 }
 
 .ProjetosContent__categoriasItem {
-    border: 1px solid var(--secundary-color);
+    border: 1px solid var(--bg-color2);
     background-color: var(--bg-color);
     width: 200px;
     height: 40px;

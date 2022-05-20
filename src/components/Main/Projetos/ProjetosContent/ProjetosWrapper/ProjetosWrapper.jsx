@@ -5,7 +5,7 @@ import "./style.css";
 const ProjetosWrapper = (props) => {
   return (
     <div className="ProjetosWrapper">
-      {props.projetos.map((projeto) => {
+      {props.projetos.map((projeto, index) => {
         return (
           <ProjetosCard
             name={projeto.nome}
@@ -13,6 +13,7 @@ const ProjetosWrapper = (props) => {
             path={projeto.imgPath}
             github={projeto.github}
             deploy={projeto.deploy}
+            key={index}
           />
         );
       })}
