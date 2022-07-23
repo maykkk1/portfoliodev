@@ -8,14 +8,14 @@
 }
 
 .SobreContainer_imgWrapper {
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     margin-left: auto;
     position: absolute;
     border-radius: 100%;
     overflow: hidden;
     border: 10px solid var(--bg-color);
-    top: -200px;
+    top: -100px;
 }
 
 

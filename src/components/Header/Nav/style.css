@@ -2,6 +2,7 @@
     position: fixed;
     width: 70px;
     height: 100vh;
+    min-height: 600px;
     background-color: var(--neutral-color);
     top: 0;
     z-index: 100;

@@ -1,6 +1,6 @@
 .Header {
     width: 100vw;
-    height: 100vh;
+    height: max-content;
     min-height: 100vh;
     background-color: transparent;
     display: flex;
