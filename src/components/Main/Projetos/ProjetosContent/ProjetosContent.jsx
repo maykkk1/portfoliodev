@@ -20,7 +20,8 @@ const ProjetosContent = () => {
     const [isDropdownVisible, SetDropdownVisible] = useState(true)
     const [dropdownHeigth, setDropdownHeight] = useState({height:"0", display:"none"})
 
-    const handleDropdown = () => {
+    const handleDropdown = (e) => {
+        e.preventDefault()
         if(isDropdownVisible) {
             SetDropdownVisible(false)
             setDropdownHeight({height:"0", bottom:"0", display:"none"})
@@ -48,7 +49,7 @@ const ProjetosContent = () => {
                 </div>
             </div>
             <div className='topDropdown'>
-                <div className='dropdown' onClick={handleDropdown}>
+                <div className='dropdown' onClick={(e)=>{handleDropdown(e)}}>
                     {selectedItem}
                     <FontAwesomeIcon icon={faAngleDown}/>
                     <div className='ProjetosContent__categorias' style={dropdownHeigth}>
