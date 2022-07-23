@@ -7,6 +7,8 @@ import ProjetosWrapper from './ProjetosWrapper/ProjetosWrapper';
 import { projetos } from '../../../../services/projetos';
 
 const ProjetosContent = () => {
+    const [cont, setCont] = useState(0)
+
     const projetosReact = projetos.filter((projeto)=>{
         return projeto.tecnologias.includes("React")
     })
@@ -20,8 +22,12 @@ const ProjetosContent = () => {
     const [isDropdownVisible, SetDropdownVisible] = useState(true)
     const [dropdownHeigth, setDropdownHeight] = useState({height:"0", display:"none"})
 
-    const handleDropdown = (e) => {
-        e.preventDefault()
+
+    const handleDropdown = () => {
+        if(cont == 0) {
+            setCont(cont + 1)
+            handleDropdown()
+        }
         if(isDropdownVisible) {
             SetDropdownVisible(false)
             setDropdownHeight({height:"0", bottom:"0", display:"none"})
@@ -49,7 +55,7 @@ const ProjetosContent = () => {
                 </div>
             </div>
             <div className='topDropdown'>
-                <div className='dropdown' onClick={(e)=>{handleDropdown(e)}}>
+                <div className='dropdown' onClick={handleDropdown}>
                     {selectedItem}
                     <FontAwesomeIcon icon={faAngleDown}/>
                     <div className='ProjetosContent__categorias' style={dropdownHeigth}>

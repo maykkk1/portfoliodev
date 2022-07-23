@@ -11,9 +11,7 @@ const SobreText = () => {
         Sou um Desenvolvedor Web. Apaixonado por desafios e a transformar
         ideias em código. Entre minhas principais habilidades estão JavaScript,
         CSS, HMTL, React, Java, Python e SQL. Sou proativo, costumo lidar bem com 
-        trabalho em equipe, possuo facilidade em me adaptar à novos cenários e me orgulho
-        em dizer que minha maior qualidade é a perseverança, sempre vou até o fim no que julgo
-        importante. Independente dos desafios.
+        trabalho em equipe e possuo facilidade em me adaptar à novos cenários.
 
       </p>
       <a href="https://drive.google.com/uc?export=download&id=1WJFBUSSvLqMakcQVxkiUNCPdmY3G-_mI">
