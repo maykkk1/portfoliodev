@@ -7,7 +7,6 @@ import ProjetosWrapper from './ProjetosWrapper/ProjetosWrapper';
 import { projetos } from '../../../../services/projetos';
 
 const ProjetosContent = () => {
-    const [cont, setCont] = useState(0)
 
     const projetosReact = projetos.filter((projeto)=>{
         return projeto.tecnologias.includes("React")
@@ -24,10 +23,6 @@ const ProjetosContent = () => {
 
 
     const handleDropdown = () => {
-        if(cont == 0) {
-            setCont(cont + 1)
-            handleDropdown()
-        }
         if(isDropdownVisible) {
             SetDropdownVisible(false)
             setDropdownHeight({height:"0", bottom:"0", display:"none"})
