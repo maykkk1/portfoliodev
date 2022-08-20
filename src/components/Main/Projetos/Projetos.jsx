@@ -1,10 +1,10 @@
-import React from 'react';
+import './Projetos.css'
 import ProjetosContent from './ProjetosContent/ProjetosContent';
-import "./style.css"
 
 const Projetos = () => {
     return ( 
-        <section className='Projetos' id='Projetos'>
+        <section className='projetos'>
+            <h2 className='projetosTitle'>Projetos</h2>
             <ProjetosContent/>
         </section>
      );

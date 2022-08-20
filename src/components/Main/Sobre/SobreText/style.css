@@ -12,9 +12,9 @@
 
 .SobreText h2 {
     font-size: 2rem;
-    color: var(--secundary-color);
-    text-shadow: .5px .5px 1px black;
-    margin-bottom: 10px;
+    color:  var(--bg-color2);
+    text-shadow: .5px .5px 0 var(--secundary-color);
+    margin-bottom: 15px;
 }
 
 .SobreText p {
@@ -30,17 +30,19 @@
     align-items: center;
     margin: 0 auto;
     gap: 5px;
-    background-color: var(--secundary-color);
-    color: var(--bg-color2);
+    font-weight: bolder;
+    background-color: var(--bg-color2);
+    color: var(--secundary-color);
     font-size: 1.3rem;
-    margin-top: 20px;
-    border: none;
+    margin-top: 50px;
     cursor: pointer;
     transition: 400ms;
+    border-radius: 5px;
+    border: 1.5px solid var(--secundary-color);
 }
 
 .SobreText__cvBtn:hover {
-    background-color: #3ba756;
+    background-color: rgb(46, 43, 43);
 }
 
 @media (max-width: 1200px) {
