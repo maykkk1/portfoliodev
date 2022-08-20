@@ -4,7 +4,7 @@ export const projetos = [
     descricao:  'Gerenciador de hábitos com elementos de gamificação, feito com react, javaScript, html e css',
     imgPath: "TH.jpg",
     github: "https://github.com/maykkk1/TH",
-    deploy: "https://thgamified.netlify.app/home",
+    deploy: "https://thgamified.netlify.app",
   },
   {
     nome: "Calculadora",
