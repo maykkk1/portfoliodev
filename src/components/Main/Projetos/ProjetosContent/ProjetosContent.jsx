@@ -5,6 +5,10 @@ const ProjetosContent = () => {
     return ( 
         <div className='ProjetosContent'>
             <ProjetosItem/>
+            <ProjetosItem/>
+            <ProjetosItem/>
+            <ProjetosItem/>
+            <ProjetosItem/>
         </div>
      );
 }

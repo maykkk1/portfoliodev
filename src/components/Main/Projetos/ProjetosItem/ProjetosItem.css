@@ -1,7 +1,9 @@
 .ProjetosItem {
     width: 360px;
     height: 480px;
-    background-color: var(--neutral-color);
+    background-color: var(--bg-color);
+    overflow: hidden;
+    border-radius: 5px;
 }
 
 .projetosCardHeader {
@@ -17,7 +19,7 @@
     justify-content: center;
     align-items: center;
     font-size: 3.3rem;
-    color: var(--primary-color);
+    color: var(--secundary-color);
 }
 
 .projetosCardTitle {
@@ -29,11 +31,11 @@
 
 .projetosCardTitle h2 {
     font-weight: 500;
-    color: var(--bg-color);
+    color: var(--neutral-color);
 }
 
 .projetosCardTitle p {
-    color: var(--bg-color2);
+    color: var(--neutral-color);
     font-size: 11px;
 }
 
@@ -48,16 +50,20 @@
 .projetosCardImage img {
     width: 100%;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
 }
 
 .projetosCardFooter {
     padding: 20px;
-    color: var(--bg-color2);
+    color: var(--neutral-color);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     height: 140px;
+}
+
+.projetosCardFooter {
+    font-size: 14px;
 }
 
 .projetosCardFooterLinks {
@@ -67,8 +73,9 @@
 
 .projetosCardFooterLinks a {
     text-decoration: none;
-    background-color: var(--primary-color);
-    color: var(--neutral-color);
-    padding: 5px;
+    background-color: var(--secundary-color);
+    color: var(--bg-color);
+    font-weight: bolder;
+    padding: 5px 10px;
     border-radius: 5px;
 }

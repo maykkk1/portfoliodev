@@ -2,4 +2,10 @@
     width: 85%;
     height: 100%;
     margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    row-gap: 50px;
+    column-gap: 50px;
 }

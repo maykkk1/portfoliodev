@@ -14,7 +14,7 @@ const ProjetosItem = () => {
                 </div>
             </div>
             <div className='projetosCardImage'>
-                <img src={require("../../../../assets/images/projetos/Calculadora.jpg")} alt=""/>
+                <img src={require("../../../../assets/images/projetos/tip_calculator.jpg")} alt=""/>
             </div>
             <div className='projetosCardFooter'>
                 <div className='projetosCardFooterDisc'>
