@@ -42,7 +42,8 @@
 }
 
 .SobreText__cvBtn:hover {
-    background-color: rgb(46, 43, 43);
+    color: var(--secundary-hover);
+    border: 1.5px solid var(--secundary-hover);
 }
 
 @media (max-width: 1200px) {

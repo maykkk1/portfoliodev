@@ -1,7 +1,7 @@
 import './ProjetosItem.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";import { faRectangleList } from "@fortawesome/free-solid-svg-icons";
 
-const ProjetosItem = () => {
+const ProjetosItem = (props) => {
     return ( 
         <div className='ProjetosItem'>
             <div className='projetosCardHeader'>
@@ -9,20 +9,20 @@ const ProjetosItem = () => {
                     <FontAwesomeIcon icon={ faRectangleList } />
                 </div>
                 <div className='projetosCardTitle'>
-                    <h2>Calculadora</h2>
+                    <h2>{props.nome}</h2>
                     <p>Projeto web</p>
                 </div>
             </div>
             <div className='projetosCardImage'>
-                <img src={require("../../../../assets/images/projetos/tip_calculator.jpg")} alt=""/>
+                <img src={require(`../../../../assets/images/projetos/${props.imgPath}`)} alt=""/>
             </div>
             <div className='projetosCardFooter'>
                 <div className='projetosCardFooterDisc'>
-                    Calculadora feita com javaScript, html e css.
+                    <p>{props.desc}</p>
                 </div>
                 <div className='projetosCardFooterLinks'>
-                    <a href="">Github</a>
-                    <a href="">Deploy</a>
+                    <a href={props.github} target="_blank">Github</a>
+                    <a href={props.deploy} target="_blank">Deploy</a>
                 </div>
             </div>
         </div>
